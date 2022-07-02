@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic online game</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/game.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="lobbyBody" class="">
+        <div id="inviteCard" class="d-none messageCard">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Request</h5>
+                </div>
+                <div class="modal-body" id="requestMsg">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="denyBtn">Deny</button>
+                    <button type="button" class="btn btn-primary" id="acceptBtn">Accept</button>
+                </div>
+            </div>
+        </div>
+        <div id="denyMsg" class="d-none messageCard">
+            <div class="modal-content  ">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title " id="staticBackdropLabel">Deny message</h5>
+                </div>
+                <div class="modal-body " id="requestMsg">
+                    your request denied
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="closeBtn">close</button>
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto w-50 bg-light text-center">
+            <div id="userList">
+    
+    
+            </div>
+    
+        </div>
+    </div>
+
+    <div id="gameBody" class="d-none">
+        <div id="container">
+            <h1 id="victory" class="d-none"> player won</h1>
+
+            <div class="progress healthBar" style="border-right: none !important;">
+                <div id="playerHealthBar" class=" progress-bar" role="progressbar" style="width: 0%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div id="timer"></div>
+            <div class="healthBar progress" style="border-left: none !important;">
+                <div id="enemyHealthBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <canvas>
+
+        </canvas>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/socket.io.min.js"></script>
+<script src="./js/socket.js"></script>
+<script src="./js/utils.js"></script>
+<script src="./js/classes.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/game.js"></script>
+
+</html>
+

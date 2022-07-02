@@ -1,0 +1,58 @@
+*{
+    overflow-y: hidden;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+.form-signin .checkbox {
+    font-weight: 400;
+}
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#userList {
+    height: 90vh;
+    margin-top: 5vh;
+    overflow-y: auto !important;
+}
+
+#userList a {
+    cursor: pointer;
+    margin: 0 10px 10px 10px;
+    border: 1px solid black;
+    padding: 10px;
+    /* height: 50px; */
+}
+
+.messageCard {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0.4);
+}
+
+.messageCard  .modal-content{
+    width: 25%;
+    margin: 20vh auto 0 auto;    
+}

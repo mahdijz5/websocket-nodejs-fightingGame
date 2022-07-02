@@ -1,0 +1,60 @@
+* {
+
+}
+
+#body {
+	position: relative;
+	display: inline-block;
+}
+
+#container {
+	padding: 20px;
+	display: flex;
+	position: absolute;
+	width: 1020px;
+	align-items: center;
+}
+
+#timer {
+	font-size: 30px;
+	flex-shrink: 0;
+	background-color: #064e3b;
+	border: 10px solid white;
+	border-radius: 10px;
+	color: white;
+	height: 120px;
+	width: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.healthBar {
+	height: 60px !important;
+	width: 100%;
+	border: 10px solid white;
+	background-color: #b91c1c !important;
+}
+
+.progress-bar {
+	background-color: #064e3b !important;
+}
+
+#victory {
+    background-color: rgba(0, 0, 0,0.8);
+	color: white;
+    padding: 50px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+#gameBody {
+	width: 1024px;
+	height: 576px;
+	position: relative;
+}

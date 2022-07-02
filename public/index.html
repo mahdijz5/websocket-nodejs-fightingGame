@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <title>Basic online game</title>
+    </head>
+    <body class="rtl text-center">
+        <form id="nicknameForm" class="form-signin">
+            <h1 class="h3 mb-3 font-weight-normal">
+                Please enter your nickname
+            </h1>
+            <label for="nicknameInput" class="sr-only">nickname</label>
+            <input
+            type="text"
+            name="nickname"
+            id="nicknameInput"
+            class="form-control"
+            placeholder="nickname"
+            required
+            autofocus
+            />
+            <button class="mt-3 btn-lg btn-primary btn-block" type="submit">
+                Start game
+            </button>
+        </form>
+        <script>
+            const nicknameForm = document.getElementById("nicknameForm"),
+                nicknameInput = document.getElementById("nicknameInput")
+
+            nicknameForm.addEventListener("submit", (e) => {
+                e.preventDefault()
+                localStorage.setItem("nickname", nicknameInput.value)
+                window.location.replace('/lobby.html')
+            });
+        </script>
+    </body>
+</html>
